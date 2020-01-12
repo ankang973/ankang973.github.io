@@ -4,11 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="article title, 我的博客">
-    <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+    <meta name="keywords" content="Java下载安装配置环境变量, 我的博客">
+    <meta name="description" content="Java下载与配置[toc]
+
+下载DK
+
+要开始Java了，现在开始记下来我的收获，到此时间是2019年12月16日 17:19:52，天气有点阴沉有点冷，肉肉又复发流鼻涕。
+1.废话不多说，直接开始，Java第一步就是要下载JDK。好的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>article title | 我的博客</title>
+    <title>Java下载安装配置环境变量 | 我的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">article title</h1>
+                    <h1 class="description center-align post-title">Java下载安装配置环境变量</h1>
                 </div>
             </div>
         </div>
@@ -440,7 +442,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-29
+                    2019-12-17
                 </div>
                 
 
@@ -457,7 +459,36 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h1 id="Java下载与配置"><a href="#Java下载与配置" class="headerlink" title="Java下载与配置"></a>Java下载与配置</h1><p>[toc]</p>
+<ul>
+<li><h2 id="下载DK"><a href="#下载DK" class="headerlink" title="下载DK"></a>下载DK</h2></li>
+</ul>
+<p>要开始Java了，现在开始记下来我的收获，到此时间是2019年12月16日 17:19:52，天气有点阴沉有点冷，肉肉又复发流鼻涕。</p>
+<p>1.废话不多说，直接开始，Java第一步就是要<strong>下载JDK</strong>。好的，第一缕疑惑出现了，我什么要下载JDK，这JDK是个啥？</p>
+<p><strong>答案：JDK是你使用Java中使用的工具。</strong></p>
+<p>就像你要当农民，你得有农具，你要当Java码农，你就要有<strong>JDK</strong>。农具有锄头镰刀，JDK有<strong>编译器</strong>，<strong>虚拟机</strong>。当你编写好你的Java源文件，通过JDK中的<strong>编译器进行语法检查</strong>，检查无误后生成一个<strong>二进制码类文件.class</strong>，这个新生成的二进制码类文件是给计算机看的，我是看不懂。</p>
+<p>然后！使用<strong>JDK中的虚拟机</strong>运行刚刚新生的二进制码类文件，这时计算机开始按照你的命令做出你想要的结果，也就是你的代码发挥功效了，你的工作有体现了。</p>
+<p>2.<strong>下载JDK</strong></p>
+<p>从Oracle官网下载JDK，据说现在多数使用JDK1.8版本，我也下的1.8版本，其实没太大，因为学的太浅，新版本的新特性轮不到你用。</p>
+<p>JDK的下载是傻瓜下载，安装也是，有一点要注意在安装ＪＤＫ时注意第一个下一步页面，是否有有ＪＲＥ结尾的路径，这一步建议取消。取消后可以继续安装，如果不取消，你最后安装完成是有<strong>两个文件夹</strong>，除了你要的JDK1.8文件夹之外，他又给你安装了一个JRE文件夹，文件夹中的是虚拟机，而JDK1.8文件夹中已经有了虚拟机，所以是重复了。如果之前我说的你没有点击取消，现在有了JRE，可以直接删除，不影响编写和运行。</p>
+<h2 id="下载之后要配置环境"><a href="#下载之后要配置环境" class="headerlink" title="下载之后要配置环境"></a>下载之后要配置环境</h2><p>配置环境是为了能随时随地随心所欲地调用编译器javac.exe和虚拟机java.exe </p>
+<h3 id="配置方法一"><a href="#配置方法一" class="headerlink" title="配置方法一"></a>配置方法一</h3><p>依次点击：电脑右键，属性，高级系统设置，在高级栏里找到环境变量，点击环境变量，点击path变量，点击编辑，复制粘贴过来（不要手打，易出错）JDK文件夹的bin目录</p>
+<p>如：<strong>D:\Program Files\Java\jdk1.8.0_231\bin</strong>将这个目录粘贴到path路径中所有路径<strong>之前</strong>，并在<strong>路径结尾</strong>处加上<strong>英语状态下的分号</strong>，这个英文分号，用以与其他路径隔离。（JDK安装时会安装在program files 文件夹下是因为你的64位系统，32系统就会在program files×86文件夹下）。</p>
+<p>到这里还没有结束，继续点击完所用的确定， then  win键+R输入cmd回车  <strong>重启DOS命令行</strong>  检查配置是否成功。可以在任意的非bin目录下输入Javac，java，如果使用出现相关的东西，那么恭喜你，环境配置成功了。 通过javac -version检查当前使用的javac版本。</p>
+<h3 id="配置方法二推荐"><a href="#配置方法二推荐" class="headerlink" title="配置方法二推荐"></a>配置方法二推荐</h3><p>装逼的环境变量配置方法，步骤与方法一的相同。</p>
+<p>打开path路径，在系统变量里新建名为<strong>JAVA_HOME</strong>，内容为<strong>D:\Program Files\Java\jdk1.8.0_231</strong>，（不包含bin目录）点击保存，然后在path路径中最前面加上<strong>%JAVA_HOME%\bin;</strong>  (bin目录在这里），用两侧加%%动态获取变量，这样我们触动path路径的概率减少，出现错误的可能也随之减少，变量JAVA_HOME内任意位置可更改。</p>
+<h3 id="方法三临时配置方法"><a href="#方法三临时配置方法" class="headerlink" title="方法三临时配置方法"></a>方法三临时配置方法</h3><p>多用于不想改变原配置环境变量而暂时使用的方法。</p>
+<p>*<em>set *</em>命令 查看、设置、删除Windows环境变量。</p>
+<p><strong>set path</strong>查看path环境变量。</p>
+<p><strong>set path</strong>=具体值，替换之前的环境变量，设定当前临时环境变量直至关闭本次DOS命令行。</p>
+<p><strong>set path=</strong>等号后空，清空path环境变量。</p>
+<p><strong>PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC</strong>这是path的扩展名，支持这些类型的文件，当你输入javac时不用加.exe即可启动javac.exe文件。</p>
+<p><strong>set path=新值;%path%</strong>在保留原环境变量基础上加上新值，%path%动态获取原path环境变量。</p>
+<h2 id="DOS命令行常见命令"><a href="#DOS命令行常见命令" class="headerlink" title="DOS命令行常见命令"></a>DOS命令行常见命令</h2><p>*<em>cd\ *</em>              退回到当前根目录下</p>
+<p><strong>盘符名：</strong>           切换盘符</p>
+<p><strong>cls</strong>                    清屏</p>
+<p><strong>exit</strong>                  退出DOS</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -500,7 +531,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ankang973.github.io/2019/11/29/article-title/">https://ankang973.github.io/2019/11/29/article-title/</a>
+                    <a href="https://ankang973.github.io/2019/12/17/Java%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">https://ankang973.github.io/2019/12/17/Java%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -701,9 +732,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/12/17/Java%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">
                     <div class="card-image">
@@ -726,9 +758,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -737,6 +769,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -747,24 +780,27 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/26/hello-world/">
+                <a href="/2019/11/29/article-title/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="article title">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">article title</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-29
                             </span>
                         <span class="publish-author">
                             
